@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToDo.Blazor.Hexagonal.Core\ToDo.Blazor.Hexagonal.Core.csproj" />
+    <ProjectReference Include="..\ToDo.Blazor.Hexagonal.Infrastructure\ToDo.Blazor.Hexagonal.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

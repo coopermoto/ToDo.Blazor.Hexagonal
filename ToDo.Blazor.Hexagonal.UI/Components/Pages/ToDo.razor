@@ -1,0 +1,50 @@
+﻿@page "/"
+@using global::ToDo.Blazor.Hexagonal.Core
+@using global::ToDo.Blazor.Hexagonal.Core.Interfaces
+@inject IToDoService toDoService
+@attribute [StreamRendering]
+
+<PageTitle>ToDo List</PageTitle>
+
+<h1>ToDo List</h1>
+
+<p>This component demonstrates showing data.</p>
+
+@if (toDoItems == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Is Complete</th>
+                <th>Date Created</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var toDoItem in toDoItems)
+            {
+                <tr>
+                    <td>@toDoItem.Description</td>
+                    <td>@toDoItem.IsComplete</td>
+                    <td>@toDoItem.DateCreated</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<ToDoItem>? toDoItems;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Simulate asynchronous loading to demonstrate streaming rendering
+        await Task.Delay(500);
+
+        toDoItems = toDoService.Get();
+    }
+}

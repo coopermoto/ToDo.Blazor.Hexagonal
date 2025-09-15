@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 1,
+    "Description": "Write this sample",
+    "IsComplete": true,
+    "DateCreated": "2025-08-07T01:35:46.8010807-07:00"
+  },
+  {
+    "Id": 2,
+    "Description": "Build my own Blazor app",
+    "IsComplete": false,
+    "DateCreated": "2025-08-07T01:35:56.5808273-07:00"
+  },
+  {
+    "Id": 3,
+    "Description": "Make the readers squint",
+    "IsComplete": true,
+    "DateCreated": "2025-08-07T01:36:09.1340956-07:00"
+  },
+  {
+    "Id": 4,
+    "Description": "Test Item",
+    "IsComplete": false,
+    "DateCreated": "2025-09-07T16:20:39.1291352-07:00"
+  },
+  {
+    "Id": 5,
+    "Description": "Another test item",
+    "IsComplete": false,
+    "DateCreated": "2025-09-07T16:20:45.6701547-07:00"
+  }
+]
